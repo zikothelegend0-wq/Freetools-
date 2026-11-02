@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Online Tools: Resume Builder, Image Compressor, QR Code Maker, Word Counter</title>
+<meta name="description" content="Free online tools with no signup, no watermark and no limits: resume builder with PDF download, image compressor, QR code generator and word counter.">
+<meta name="keywords" content="free resume builder, image compressor online, free qr code generator, word counter, no watermark">
+<meta property="og:title" content="Free Online Tools. No Signup, No Watermark">
+<meta property="og:description" content="Resume builder, image compressor, QR code maker and word counter. All free, all private in your browser.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://YOUR-DOMAIN.com/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"FreeKit Tools","url":"https://YOUR-DOMAIN.com/","description":"Free online tools with no signup and no watermark."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is the resume builder really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can download your resume as a PDF with no watermark and no payment."}},
+{"@type":"Question","name":"Are my files uploaded to a server?","acceptedAnswer":{"@type":"Answer","text":"No. Everything runs inside your browser, so your photos and resume details stay on your device."}},
+{"@type":"Question","name":"Do I need to sign up?","acceptedAnswer":{"@type":"Answer","text":"No. Open a tool and use it."}}]}
+</script>
+<style>
+:root{--bg:#f4f7f6;--surface:#fff;--ink:#14232b;--muted:#4f6169;--line:#d5dfdc;--teal:#0f766e;--gold:#f2a900;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1a1f;--surface:#15262d;--ink:#e8f0ee;--muted:#9bb0b6;--line:#2a3f47;--teal:#2dd4bf;--gold:#f2b81f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Segoe UI",system-ui,-apple-system,sans-serif}
+header,main,footer{max-width:960px;margin:0 auto;padding:0 18px}
+header{padding-top:28px}
+h1{font-size:clamp(1.7rem,5vw,2.6rem);line-height:1.15;margin:0 0 10px;letter-spacing:-.02em}
+h2{font-size:1.4rem;margin:0 0 6px}
+h3{margin:22px 0 4px;font-size:1.05rem}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 22px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+nav a{padding:9px 16px;border:2px solid var(--line);border-radius:999px;color:var(--ink);text-decoration:none;font-weight:600;background:var(--surface)}
+nav a.on{border-color:var(--teal);background:var(--teal);color:#fff}
+nav a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.tool{display:none;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.tool.on{display:block}
+label{display:block;font-weight:600;margin:12px 0 4px}
+input,textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit}
+textarea{min-height:90px;resize:vertical}
+button,.btn{display:inline-block;margin-top:14px;padding:11px 20px;border:0;border-radius:8px;background:var(--gold);color:#14232b;font-weight:700;font-size:1rem;cursor:pointer;text-decoration:none}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;margin-top:12px}
+.stat{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center}
+.stat b{display:block;font-size:1.5rem;color:var(--teal)}
+#paper{background:#fff;color:#111;border:1px solid var(--line);border-radius:6px;padding:22px;min-height:340px;font-size:.92rem;line-height:1.5;overflow-wrap:anywhere}
+#paper h4{margin:0;font-size:1.5rem}
+#paper .sub{color:#444;margin:2px 0 10px}
+#paper h5{margin:14px 0 3px;font-size:.95rem;border-bottom:2px solid #0f766e;color:#0f766e}
+#paper p{margin:0;white-space:pre-wrap}
+#qrbox{margin:16px 0;min-height:128px}
+#qrbox img,#qrbox canvas{max-width:100%}
+.info{margin:34px 0 10px}
+.info p,.info li{color:var(--muted);max-width:70ch}
+footer{padding:24px 18px 40px;color:var(--muted);font-size:.9rem}
+@media (max-width:720px){.cols,.row{grid-template-columns:1fr}}
+@media print{body *{visibility:hidden}#paper,#paper *{visibility:visible}#paper{position:absolute;inset:0;border:0;padding:24px}}
+</style>
+</head>
+<body>
+<header>
+<h1>Free online tools. No signup, no watermark.</h1>
+<p class="lead">Build a resume, shrink a photo, make a QR code or count words. Everything runs in your browser, so your files never leave your device.</p>
+<nav id="tabs" aria-label="Tools">
+<a href="#resume" data-t="resume">Resume builder</a>
+<a href="#compress" data-t="compress">Image compressor</a>
+<a href="#qr" data-t="qr">QR code maker</a>
+<a href="#words" data-t="words">Word counter</a>
+</nav>
+</header>
+<main>
+
+<section class="tool" id="resume">
+<h2>Free resume builder with PDF download</h2>
+<p class="lead">Fill in your details. The preview updates as you type. Press the button and choose "Save as PDF".</p>
+<div class="cols">
+<div>
+<label for="rn">Full name</label><input id="rn" placeholder="Your name">
+<div class="row"><div><label for="rp">Phone</label><input id="rp" inputmode="tel"></div><div><label for="re">Email</label><input id="re" type="email"></div></div>
+<label for="rl">City</label><input id="rl">
+<label for="rs">Summary</label><textarea id="rs" placeholder="Two or three lines about you"></textarea>
+<label for="rk">Skills (comma separated)</label><input id="rk">
+<label for="rx">Experience</label><textarea id="rx" placeholder="Company, role, dates, what you did"></textarea>
+<label for="rd">Education</label><textarea id="rd"></textarea>
+<button type="button" id="pdfBtn">Download PDF</button>
+</div>
+<div id="paper" aria-live="polite"></div>
+</div>
+</section>
+
+<section class="tool" id="compress">
+<h2>Image compressor</h2>
+<p class="lead">Reduce photo size for job portals, forms and WhatsApp. Nothing is uploaded.</p>
+<label for="cf">Choose a photo</label><input id="cf" type="file" accept="image/*">
+<label for="cq">Quality: <span id="cqv">70</span>%</label><input id="cq" type="range" min="10" max="95" value="70">
+<label for="cw">Max width in pixels (optional)</label><input id="cw" type="number" placeholder="e.g. 1200">
+<div class="stats"><div class="stat"><b id="s1">-</b>Before</div><div class="stat"><b id="s2">-</b>After</div><div class="stat"><b id="s3">-</b>Saved</div></div>
+<a class="btn" id="cdl" download="compressed.jpg" style="display:none">Download image</a>
+<p id="cmsg" class="lead"></p>
+</section>
+
+<section class="tool" id="qr">
+<h2>QR code generator</h2>
+<p class="lead">Turn a link, phone number or text into a QR code that never expires.</p>
+<label for="qt">Text or link</label><input id="qt" placeholder="https://example.com">
+<button type="button" id="qb">Make QR code</button>
+<div id="qrbox"></div>
+<a class="btn" id="qdl" download="qrcode.png" style="display:none">Download QR code</a>
+</section>
+
+<section class="tool" id="words">
+<h2>Word counter</h2>
+<p class="lead">Count words, characters, sentences and reading time.</p>
+<label for="wt">Paste or type your text</label><textarea id="wt" style="min-height:180px"></textarea>
+<div class="stats">
+<div class="stat"><b id="w1">0</b>Words</div><div class="stat"><b id="w2">0</b>Characters</div>
+<div class="stat"><b id="w3">0</b>Sentences</div><div class="stat"><b id="w4">0</b>Min to read</div>
+</div>
+</section>
+
+<section class="info">
+<h2>Questions</h2>
+<h3>Is the resume builder really free?</h3>
+<p>Yes. Download your resume as a PDF with no watermark and no payment.</p>
+<h3>Are my files uploaded anywhere?</h3>
+<p>No. Every tool works inside your browser, so your photos and resume details stay on your device.</p>
+<h3>Do I need to sign up?</h3>
+<p>No. Open a tool and use it.</p>
+</section>
+</main>
+<footer>© FreeKit Tools. Free to use.</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+function show(){
+  const t=(location.hash||'#resume').slice(1);
+  const id=['resume','compress','qr','words'].includes(t)?t:'resume';
+  document.querySelectorAll('.tool').forEach(s=>s.classList.toggle('on',s.id===id));
+  document.querySelectorAll('#tabs a').forEach(a=>a.classList.toggle('on',a.dataset.t===id));
+}
+addEventListener('hashchange',show);show();
+
+// Resume
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function resume(){
+  const g=id=>esc($(id).value.trim());
+  const contact=[g('rl'),g('rp'),g('re')].filter(Boolean).join('  |  ');
+  const sec=(t,v)=>v?`<h5>${t}</h5><p>${v}</p>`:'';
+  $('paper').innerHTML=`<h4>${g('rn')||'Your Name'}</h4><div class="sub">${contact||'City | Phone | Email'}</div>`+
+    sec('Summary',g('rs'))+sec('Skills',g('rk'))+sec('Experience',g('rx'))+sec('Education',g('rd'));
+}
+['rn','rp','re','rl','rs','rk','rx','rd'].forEach(i=>$(i).addEventListener('input',resume));resume();
+$('pdfBtn').onclick=()=>{try{print()}catch(e){}};
+
+// Image compressor
+const kb=n=>n>1048576?(n/1048576).toFixed(2)+' MB':Math.round(n/1024)+' KB';
+let file=null;
+function compress(){
+  if(!file)return;
+  const img=new Image();
+  img.onload=()=>{
+    let w=img.width,h=img.height;const mw=parseInt($('cw').value);
+    if(mw&&w>mw){h=Math.round(h*mw/w);w=mw}
+    const c=document.createElement('canvas');c.width=w;c.height=h;
+    const x=c.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,w,h);x.drawImage(img,0,0,w,h);
+    c.toBlob(b=>{
+      $('s1').textContent=kb(file.size);$('s2').textContent=kb(b.size);
+      const s=Math.max(0,Math.round(100-b.size*100/file.size));$('s3').textContent=s+'%';
+      const a=$('cdl');a.href=URL.createObjectURL(b);a.style.display='inline-block';
+      $('cmsg').textContent=b.size>=file.size?'This photo is already small. Try lower quality or a smaller width.':'';
+    },'image/jpeg',$('cq').value/100);
+  };
+  img.src=URL.createObjectURL(file);
+}
+$('cf').onchange=e=>{file=e.target.files[0];compress()};
+$('cq').oninput=e=>{$('cqv').textContent=e.target.value;compress()};
+$('cw').oninput=compress;
+
+// QR
+let qr=null;
+$('qb').onclick=()=>{
+  const v=$('qt').value.trim();if(!v){$('qrbox').textContent='Enter some text or a link first.';return}
+  $('qrbox').innerHTML='';
+  qr=new QRCode($('qrbox'),{text:v,width:220,height:220,correctLevel:QRCode.CorrectLevel.M});
+  setTimeout(()=>{const c=$('qrbox').querySelector('canvas');if(c){$('qdl').href=c.toDataURL('image/png');$('qdl').style.display='inline-block'}},150);
+};
+
+// Words
+$('wt').addEventListener('input',()=>{
+  const t=$('wt').value,w=t.trim()?t.trim().split(/\s+/).length:0;
+  $('w1').textContent=w;$('w2').textContent=t.length;
+  $('w3').textContent=(t.match(/[.!?]+(\s|$)/g)||[]).length;
+  $('w4').textContent=Math.max(w?1:0,Math.round(w/200));
+});
+</script>
+</body>
+</html>
